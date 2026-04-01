@@ -1,0 +1,20 @@
+{
+    "name": "nece001/php-hound-cloud-storage",
+    "description": "php 云存储基础包",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nece\\Hound\\Cloud\\Storage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nece001",
+            "email": "nece001@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    }
+}
