@@ -1,0 +1,19 @@
+<?php
+
+namespace Nece\Hound\Cloud\Storage;
+
+class Consts
+{
+    const SCANDIR_SORT_ASCENDING = SCANDIR_SORT_ASCENDING;
+    const SCANDIR_SORT_DESCENDING = SCANDIR_SORT_DESCENDING;
+    const SCANDIR_SORT_NONE = SCANDIR_SORT_NONE;
+
+    
+
+    const ERROR_CODE_UNKNOWN = 600;
+    const ERROR_CODE_NOT_SUPPORTED = 601;
+    const ERROR_CODE_TOKEN_INVALIDATED = 401;
+    const ERROR_CODE_AUTH_FAILED = 403;
+    const ERROR_CODE_NOT_FOUND = 404;
+    const ERROR_CODE_SERVER_ERROR = 500;
+}
