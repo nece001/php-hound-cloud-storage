@@ -5,7 +5,7 @@ namespace Nece\Hound\Cloud\Storage;
 interface IStorage
 {
     /**
-     * 文件、目录是否存在，目录要带 / 结尾
+     * 文件、目录是否存在
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:35:57
@@ -16,7 +16,7 @@ interface IStorage
     public function exists(string $path): bool;
 
     /**
-     * 是否是目录，目录要带 / 结尾
+     * 是否是目录
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:36:21
@@ -38,7 +38,7 @@ interface IStorage
     public function isFile(string $path): bool;
 
     /**
-     * 复制文件、目录，目录要带 / 结尾
+     * 复制文件、目录
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:38:56
@@ -50,7 +50,7 @@ interface IStorage
     public function copy(string $from, string $to): bool;
 
     /**
-     * 移动文件、目录（重命名），目录要带 / 结尾
+     * 移动文件、目录（重命名）
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:39:03
@@ -62,7 +62,7 @@ interface IStorage
     public function move(string $from, string $to): bool;
 
     /**
-     * 删除文件、目录，目录要带 / 结尾
+     * 删除文件、目录
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:39:17
@@ -73,7 +73,7 @@ interface IStorage
     public function delete(string $path): bool;
 
     /**
-     * 创建目录，目录要带 / 结尾
+     * 创建目录
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:39:23
@@ -86,7 +86,7 @@ interface IStorage
     public function mkdir(string $path, int $mode = 0755, bool $recursive = true): bool;
 
     /**
-     * 删除目录，目录要带 / 结尾
+     * 删除目录
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:39:32
@@ -97,7 +97,7 @@ interface IStorage
     public function rmdir(string $path): bool;
 
     /**
-     * 遍历目录，目录要带 / 结尾
+     * 目录列表
      *
      * @author nece001@163.com
      * @create 2026-03-29 18:39:38
@@ -106,7 +106,7 @@ interface IStorage
      * @param integer $order
      * @return array
      */
-    public function scandir(string $path, int $order = Consts::SCANDIR_SORT_ASCENDING): array;
+    public function list(string $path, int $order = Consts::SCANDIR_SORT_ASCENDING): array;
 
     /**
      * 上传文件

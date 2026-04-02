@@ -2,7 +2,7 @@
 
 namespace Nece\Hound\Cloud\Storage;
 
-abstract class ObjectStorage
+abstract class ObjectStorage extends Storage
 {
     /**
      * 清理对象的key
